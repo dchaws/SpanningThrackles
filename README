@@ -20,14 +20,14 @@
 // www.davidhaws.net
 // https://github.com/dchaws
 
-The program numspanthrackles impliments my conjectured recursive function
+The program numspanthrackles impliments my recursive function
 for the number of spanning thrackles of a complete bipartite graph.
 
 Let f(m,n) = number of spanning thrackles of the complete bipartite graph.
 
-Then, I conjecture f(m,n) = \sum_{i=0}^{n-1} f(m-1,n-i).
+Then, I proved f(m,n) = \sum_{i=0}^{n-1} f(m-1,n-i).
 
-I think this follows from the fact that if we order the vertices
+This follows from the fact that if we order the vertices
 
 
 m *     * m+1
@@ -39,7 +39,27 @@ m *     * m+1
 1 *     * m+n
 
 
-If we require the edge {1,m+1} and no other edges incident to 1, then this
-reduces to f(m-1,n).
+If we require the edge (1,m+1) and no other edges incident to 1, then this
+reduces to f(m-1,n). If we require the edges (1,m+1),(1,m+2) and no other edges
+incident to 1, then this reduces to f(m-1,n-1). ...
+
+
+Note
+f(1,1)   = 1
+f(2,2)   = 2
+f(3,3)   = 6
+f(4,4)   = 20
+f(5,5)   = 70
+f(6,6)   = 252
+f(7,7)   = 924
+f(8,8)   = 3432
+f(9,9)   = 12870
+f(10,10) = 48620
+
+
+The website http://oeis.org/ determines that this sequence is the
+Central binomial coefficients: C(2*n,n) = (2*n)!/(n!)^2.
+
+
 
 
