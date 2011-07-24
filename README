@@ -61,5 +61,12 @@ The website http://oeis.org/ determines that this sequence is the
 Central binomial coefficients: C(2*n,n) = (2*n)!/(n!)^2.
 
 
+7/24/11
+
+Now have a proof that in fact
+f(s,t) = s + t - 2 \choose s -1.
+
+
+
 
 
