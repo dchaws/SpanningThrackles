@@ -68,5 +68,10 @@ f(s,t) = s + t - 2 \choose s -1.
 
 
 
-
+********** TODO **********
+7/25/11
+Now that I proved that f(s,t) = s + t - 2 \choose s -1, write a program that
+will read in a submatrix of K_{s,t} and output either the number of simplices
+in the triangulation, i.e., the number of spanning thrackles, or enumerate them
+all. Input should be the adjacency matrix.
 
